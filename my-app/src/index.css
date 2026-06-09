@@ -1,0 +1,43 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import "tailwindcss";
+
+
+
+@layer base{
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  @keyframes slow-spin {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  @keyframes fluid-glow {
+    0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.2; }
+    33% { transform: scale(1.15) translate(30px, -20px); opacity: 0.25; }
+    66% { transform: scale(0.9) translate(-20px, 20px); opacity: 0.15; }
+  }
+
+  .animate-slow-spin {
+    animation: slow-spin 40s linear infinite;
+  }
+
+  .animate-fluid-glow-1 {
+    animation: fluid-glow 10s ease-in-out infinite;
+  }
+
+  .animate-fluid-glow-2 {
+    animation: fluid-glow 14s ease-in-out infinite reverse;
+  }
+}
+}
