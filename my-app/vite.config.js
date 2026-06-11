@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    rollupOptions: { //  Correct property name
+    rollupOptions: {
       external: ['some-package'],
     }
   }
