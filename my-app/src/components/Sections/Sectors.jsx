@@ -1,4 +1,4 @@
-import { Hd20Filled } from "@fluentui/react-icons/fonts";
+import { Hd20Filled } from "@fluentui/react-icons";
 
 function Sectors() {
   const sectors = [
@@ -30,7 +30,7 @@ function Sectors() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start mb-16">
           <div className="lg:col-span-7 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-blue-400 block">
-                Who We Help
+              Who We Help
             </span>
 
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
@@ -42,7 +42,8 @@ function Sectors() {
           </div>
 
           <div className="lg:col-span-5 lg:pt-8 text-gray-400 text-sm sm:text-base leading-relaxed">
-            We provide the solid communication backbone needed by industries that handle large volumes of daily customers.
+            We provide the solid communication backbone needed by industries
+            that handle large volumes of daily customers.
           </div>
         </div>
 
@@ -67,9 +68,7 @@ function Sectors() {
               <div className="pt-6 border-t border-white/[0.03] mt-4">
                 <span className="text-xs font-semibold text-blue-400 inline-flex items-center gap-1 group-hover:text-blue-300 transition-colors">
                   {item.actionText}{" "}
-                  <span className="transform group-hover:translate-x-0.5 transition-transform">
-                    
-                  </span>
+                  <span className="transform group-hover:translate-x-0.5 transition-transform"></span>
                 </span>
               </div>
             </div>
